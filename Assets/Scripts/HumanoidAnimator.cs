@@ -66,7 +66,7 @@ public class HumanoidAnimator : MonoBehaviour
 
     public void WakeUp()
     {
-        
+
     }
     
     private IEnumerator _GetUp()

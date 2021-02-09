@@ -25,11 +25,20 @@ public class OverworldCharacter : MonoBehaviour
             MainCharacter = this;
         }
         _humanoidAnimator = GetComponent<HumanoidAnimator>();
+
+        StartCoroutine(_Test());
     }
     
     private void Update()
     {
         
+    }
+
+    private IEnumerator _Test()
+    {
+        yield return new WaitForSeconds(2.0f);
+        var sprite = UIManager.Instance.testSprite;
+        UIManager.Instance.ShowTestDialogWindow("Test Dialog", sprite);
     }
 
     public void AnimateWakeUp()

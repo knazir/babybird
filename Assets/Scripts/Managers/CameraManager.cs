@@ -44,7 +44,7 @@ public class CameraManager : MonoBehaviour
     private bool _canPan;
     private bool _hasTouchCountChanged;
     private bool _isLocked;
-    private bool _isMouseDownOverUi;
+    private bool _isMouseDownOverUI;
     private bool _isPanning;
     private bool _isPanningStarted;
     private bool _isZoomingStarted;
@@ -76,10 +76,10 @@ public class CameraManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _isMouseDownOverUi = _IsUsingUI();
+            _isMouseDownOverUI = _IsUsingUI();
         }
 
-        if (_isMouseDownOverUi)
+        if (_isMouseDownOverUI)
         {
             return;
         }
