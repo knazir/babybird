@@ -121,7 +121,7 @@ public class CameraManager : MonoBehaviour
         var delta = _previousPanPoint - evt.Point;
         
         // For now, panning should not change the Y value, assume all terrain is (mostly) flat
-        // delta.y = 0.0f;
+        delta.y = 0.0f;
         
         var pos = movableCamera.transform.position;
         movableCamera.transform.position += delta;
